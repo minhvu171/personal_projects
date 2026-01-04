@@ -84,5 +84,4 @@ common_df = pd.DataFrame({"Gene": list(common_genes)})
 common_df = common_df.merge(DBT_df, on="Gene", how="left")
 common_df = common_df.merge(drug5A_df, on="Gene", how="left", suffixes=("", "_5A"))
 common_df = common_df.merge(R234_df, on="Gene", how="left", suffixes=("", "_R234"))
-#common_df.to_excel("Cell_lines_common_genes.xlsx", index=False)
 
